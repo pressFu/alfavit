@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 #include<iostream>
 using namespace std;
+=======
+>>>>>>> master
 void sort(int N,char String, char Words){
 	for (int j=N-1;j>0;j--){
 		for (int i=0;i<j;i++){
