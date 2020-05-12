@@ -1,25 +1,27 @@
 #include<iostream>
 #include<stdlib.h>
+#include <string.h>
 #include "input.h"
+#include "rasp.h"
+#include "sort.h"
 using namespace std;
-const int n = 10;
+
 main(){
 	setlocale(LC_ALL,"Rus");
-	int N,K;
-	char *p = new char[N];
-	char *words = new char[K];
+	int N,K,n=0;
+	char p[10000];
+	char words[10000];
 	cout<<"¬ведите текс: ";
-	cin>>N;
-	int A[n];
-	for(int i=0;i<n;i++){
-		A[i] = i;
-	}
-	input(n,A);
+	gets(p);
+	cout<<"A"<<endl;
+	rasp(n,p,words);
+	cout<<"B"<<endl;
+	sort(n,p,words);
+	cout<<"C"<<endl;
+	for (int i = 0; i < n; i ++)
+	printf("%s\n", &p[words[i]]);
 	
-	
-	
-	
-	delete p;
-	delete words;
+//	delete p;
+//	delete words;
 	return 0;
 }
