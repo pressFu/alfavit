@@ -1,4 +1,5 @@
 #include<iostream>
+#include<stdlib.h>
 using namespace std;
 void rasp(char *p,char *words){
 	for(int n=0,i=0,flag=1;p[i];i++){
@@ -15,4 +16,5 @@ void rasp(char *p,char *words){
     		flag = 0;
 		}
 	}
+	
 }
