@@ -20,5 +20,4 @@ void rasp(int n,char *p,char *words){
     		flag = 0;
 		}
 	}
-//	return ;
 }
