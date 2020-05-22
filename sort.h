@@ -1,15 +1,16 @@
-<<<<<<< HEAD
+//<<<<<<< HEAD
 #include<iostream>
+#include <string.h>
 using namespace std;
-=======
->>>>>>> master
-void sort(int N,char String, char Words){
+//=======
+//>>>>>>> master
+void sort(int N,char *p, char *words){
 	for (int j=N-1;j>0;j--){
 		for (int i=0;i<j;i++){
-    		if (strcmp(&String[Words[i]], &String[Words[i + 1]]) > 0){
-    		Temp = Words[i];
-    		Words[i] = Words[i + 1];
-	    	Words[i + 1] = Temp;
+    		if (strcmp(&p[words[i]], &p[words[i + 1]]) > 0){
+    		int Temp = words[i];
+    		words[i] = words[i + 1];
+	    	words[i + 1] = Temp;
 			}
 		}
 	}

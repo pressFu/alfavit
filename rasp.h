@@ -1,6 +1,10 @@
 #include<iostream>
+<<<<<<< HEAD
 #include<string.h>
 #include<stdlib.h>
+=======
+#include <string.h>
+>>>>>>> master
 using namespace std;
 void rasp(int n,char *p,char *words){
 	int i=0;
